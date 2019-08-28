@@ -14,12 +14,9 @@ const connect = function() {
     console.log('Server says: ', data);
   });
   conn.on('connect', () => {
-    conn.write('Successful!');
-  });
-  conn.on('connect', () => {
     conn.write('Name: JMS');
   });
-  
+
   return conn;
 }
 
